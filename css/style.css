@@ -1,16 +1,90 @@
+/* generics */
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
+
+body *{
+    border: 1px solid #B4D0E7;
+}
+
+/* utils */
 
 .container-l{
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.container-s{
     width: 1080px;
     margin: 0 auto;
 }
 
+.container-s{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.bg-light-blue{
+    background-color: #B4D0E7;
+}
+
+.button{
+    padding: 5px 10px;
+    background-color: #0061FF;
+    color: #fff;
+}
+
+.border-gray{
+    color: #D0D0D3;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.col-30{
+    width: 30%;
+}
+
+.col-70{
+    width: 70%;
+}
+
+/*header*/
+
+.navbar{
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    justify-content: space-between;
+    padding: 30px 10px;
+    background-color: #fff;
+}
+
+.navbar-left, .navbar-right{
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+/* Jumbotron */
+
+h1{
+    font-weight: 800;
+    font-size: 60px;
+    padding-bottom: 50px;
+}
+
+.col-70{
+    position: relative;
+}
+
+.jumbo-row img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+.jumbotron{
+    padding-top: 50px;
+    }
