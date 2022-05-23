@@ -33,7 +33,7 @@ body *{
 }
 
 .border-gray{
-    color: #D0D0D3;
+    border: 1px solid #D0D0D3;
 }
 
 .d-flex{
@@ -46,6 +46,10 @@ body *{
 
 .col-70{
     width: 70%;
+}
+
+.font-30{
+    font-size: 30px;
 }
 
 /*header*/
@@ -71,7 +75,7 @@ body *{
 h1{
     font-weight: 800;
     font-size: 60px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .col-70{
@@ -88,3 +92,37 @@ h1{
 .jumbotron{
     padding-top: 50px;
     }
+
+.jumbo-bg{
+    margin-bottom: 200px;
+}
+
+/* Section business plan */
+
+.business-plan h2{
+    margin: 30px 0;
+    padding-bottom: 20px;
+}
+
+.business-plan .checkboxes{
+    margin: 30px 0;
+}
+
+.business-plan .row{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.business-plan .col{
+    width: calc(100% - 2px);
+
+    /* to be removed */
+    height: 400px;
+}
+
+.business-plan .col-100{
+
+    /* to be removed*/
+    height: 200px;
+}
