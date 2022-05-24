@@ -6,12 +6,22 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-body *{
-    border: 1px solid #B4D0E7;
+a{
+    text-decoration: none;
+    color: #000;
 }
-
 img {
     max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section {
+    padding: 50px 0;
 }
 
 /* utils */
@@ -171,4 +181,38 @@ h1{
 
 .img-box{
     flex-basis: 50%;
+}
+
+/* faq */
+
+
+#faq-title, .faq-content {
+    border-bottom: 1px solid #D0D0D3;
+    padding: 30px 0;
+}
+
+.faq-content{
+    justify-content: space-between;
+}
+
+.faq-content i{
+    padding: 0 20px;
+}
+
+/* footer */
+
+footer{
+    background-color: #000;
+    color: #fff;
+}
+.footer-top{
+    border-bottom: 1px solid #D0D0D3;
+}
+.footer-top .col{
+    width: 20%;
+}
+
+footer li > a{
+    text-decoration: none;
+    color: white;
 }
