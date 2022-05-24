@@ -10,6 +10,10 @@ body *{
     border: 1px solid #B4D0E7;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* utils */
 
 .container-l{
@@ -19,7 +23,7 @@ body *{
 
 .container-s{
     width: 800px;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .bg-light-blue{
@@ -59,6 +63,7 @@ body *{
     top: 0%;
     left: 0%;
     right: 0%;
+    z-index: 1;
     justify-content: space-between;
     padding: 30px 10px;
     background-color: #fff;
@@ -78,7 +83,7 @@ h1{
     margin-bottom: 50px;
 }
 
-.col-70{
+.jumbo-row .col-70{
     position: relative;
 }
 
@@ -115,7 +120,7 @@ h1{
 }
 
 .business-plan .col{
-    width: calc(100% - 2px);
+    width: calc(100% / 3 - 2px);
 
     /* to be removed */
     height: 400px;
@@ -125,4 +130,45 @@ h1{
 
     /* to be removed*/
     height: 200px;
+}
+
+/* find partners */
+
+.find-partner img{
+    max-width: 100%;
+}
+
+.find-partner .col-30{
+    padding: 10px;
+}
+.find-partner .col-70 {
+    padding: 30px;
+}
+
+.find-partner .row{
+    align-items: center;
+    margin: 50px 0;
+}
+
+/* operations */
+
+.operations .row{
+    flex-wrap: wrap;
+}
+.operations .col{
+    width: calc(100% / 3 - 40px);
+    padding: 20px;
+}
+
+/* our clients */
+
+/* partners */
+
+.box .col{
+    width: calc(100% / 3 - 2px);
+    flex-wrap: wrap;
+}
+
+.img-box{
+    flex-basis: 50%;
 }
