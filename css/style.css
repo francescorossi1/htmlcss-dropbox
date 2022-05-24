@@ -33,7 +33,7 @@ section {
 
 .container-s{
     width: 800px;
-    margin: 50px auto;
+    margin: 0 auto;
 }
 
 .bg-light-blue{
@@ -41,9 +41,14 @@ section {
 }
 
 .button{
-    padding: 5px 10px;
+    padding: 10px 15px;
     background-color: #0061FF;
     color: #fff;
+    display: inline-block;
+}
+
+.button-s{
+    padding: 5px 10px;
 }
 
 .border-gray{
@@ -54,16 +59,26 @@ section {
     display: flex;
 }
 
-.col-30{
+.w-30{
     width: 30%;
 }
 
-.col-70{
+.w-70{
     width: 70%;
 }
 
 .font-30{
     font-size: 30px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /*header*/
@@ -77,7 +92,7 @@ header.navbar{
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    height: 70px;
+    height: 80px;
 }
 
 .navbar ul{
@@ -92,27 +107,11 @@ header.navbar{
 
 h1{
     font-weight: 800;
-    font-size: 60px;
-    margin-bottom: 50px;
+    font-size: 70px;
 }
 
-.jumbo-row .col-70{
-    position: relative;
-}
-
-.jumbo-row img{
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
-
-.jumbotron{
-    padding-top: 50px;
-    }
-
-.jumbo-bg{
-    margin-bottom: 200px;
+.jumbotron.container-l{
+    height: 620px;
 }
 
 /* Section business plan */
