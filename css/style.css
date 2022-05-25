@@ -177,6 +177,10 @@ h1{
 
 /* Section business plan */
 
+.business-plan{
+    margin-top: 80px;
+}
+
 .business-plan h2{
     padding-bottom: 20px;
 }
@@ -348,6 +352,20 @@ h1{
 
 .faq-content i{
     padding: 0 20px;
+}
+
+.invisible{
+    display: none;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.faq-content:hover .invisible{
+    display: block;
+}
+
+.faq-content:hover .fa-angle-down{
+    transform: rotate(180deg);
 }
 
 /* footer */
