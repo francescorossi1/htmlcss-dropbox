@@ -1,8 +1,11 @@
 /* generics */
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -15,13 +18,18 @@ img {
     display: block;
 }
 
-ul {
+ul, li {
     list-style-type: none;
-    padding: 0;
+    padding: 10px 0;
 }
 
 section {
     padding: 80px 0;
+}
+
+hr{
+    width: 50px;
+    margin: 30px 0;
 }
 
 /* utils */
@@ -60,6 +68,10 @@ section {
     border: 1px solid #D0D0D3;
 }
 
+.gray-color{
+    color: #808080;
+}
+
 .d-flex{
     display: flex;
 }
@@ -93,6 +105,7 @@ section {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 
 /*header*/
 
@@ -134,13 +147,32 @@ h1{
 /* Section business plan */
 
 .business-plan h2{
-    padding-top: 50px;
     padding-bottom: 20px;
 }
 
 .business-plan .checkboxes{
     margin: 50px 0;
 }
+
+.checkboxes i{
+    margin-right: 5px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.checkboxes .fa-circle{
+    border: 2px solid #D0D0D3;
+}
+
+.checkboxes .fa-circle-dot{
+    color: #0061FF;
+}
+
+.checkboxes span{
+    margin-right: 30px;
+}
+
+/* business plan columns */
 
 .business-plan .row{
     flex-wrap: wrap;
@@ -149,9 +181,50 @@ h1{
 }
 
 .business-plan .col{
-    width: calc(100% / 3 - 40px);
-    padding: 0 20px;
+    width: calc(100% / 3);
+    padding: 20px;
+    margin-bottom: 50px;
 }
+
+.business-plan .col-content{
+    height: 100%;
+}
+
+.business-plan .team-number{
+    text-align: center;
+    padding: 5px 0;
+}
+
+.business-plan .plan-details{
+    height: 100%;
+    padding: 20px;
+}
+
+.plan-details > *{
+    margin-bottom: 30px;
+}
+
+.plan-details .button{
+    display: block;
+    text-align: center;
+}
+
+.plan-details  span a{
+    text-decoration: underline;
+    color: #0000EE;
+}
+
+.fa-check{
+    color: #0061FF;
+}
+
+.col-full .plan-details{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 30px;
+}
+    
 
 /* find partners */
 
@@ -160,12 +233,12 @@ h1{
 }
 
 .find-partner .col-txt{
-    width: calc(100% / 3 - 40px);
+    width: calc(100% / 3);
     padding: 40px;
 }
 
 .find-partner .col-img{
-    width: calc(100% / 3 * 2 - 40px);
+    width: calc(100% / 3 * 2);
 }
 
 .find-partner a{
@@ -174,7 +247,7 @@ h1{
 /* operations */
 
 .operations .col{
-    width: calc(100% / 3 - 40px);
+    width: calc(100% / 3);
     padding: 20px;
 }
 
@@ -246,6 +319,5 @@ footer li > a{
 }
 
 .footer-bottom{
-    color: #808080;
     padding: 50px 0;
 }
