@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+.button-blue:hover{
+    background-color: #0093CE;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -77,9 +81,12 @@ hr{
 
 .button{
     padding: 10px 15px;
+    display: inline-block;
+}
+
+.button-blue{
     background-color: #0061FF;
     color: #fff;
-    display: inline-block;
 }
 
 .button-white{
