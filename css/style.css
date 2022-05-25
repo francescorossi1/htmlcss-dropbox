@@ -21,7 +21,7 @@ ul {
 }
 
 section {
-    padding: 50px 0;
+    padding: 80px 0;
 }
 
 /* utils */
@@ -32,7 +32,7 @@ section {
 }
 
 .container-s{
-    width: 800px;
+    width: 900px;
     margin: 0 auto;
 }
 
@@ -45,6 +45,11 @@ section {
     background-color: #0061FF;
     color: #fff;
     display: inline-block;
+}
+
+.button-white{
+    background-color: #fff;
+    color: #000;
 }
 
 .button-s{
@@ -63,12 +68,20 @@ section {
     width: 30%;
 }
 
+.w-40{
+    width: 40%;
+}
+
+.w-60{
+    width: 60%;
+}
+
 .w-70{
     width: 70%;
 }
 
-.font-30{
-    font-size: 30px;
+.font-36{
+    font-size: 36px;
 }
 
 .mb-30{
@@ -110,38 +123,34 @@ h1{
     font-size: 70px;
 }
 
+.jumbotron p{
+    margin-top: 0;
+}
+
 .jumbotron.container-l{
-    height: 620px;
+    height: 650px;
 }
 
 /* Section business plan */
 
 .business-plan h2{
-    margin: 30px 0;
+    padding-top: 50px;
     padding-bottom: 20px;
 }
 
 .business-plan .checkboxes{
-    margin: 30px 0;
+    margin: 50px 0;
 }
 
 .business-plan .row{
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 30px 0;
+    margin: 0 -20px;
 }
 
 .business-plan .col{
-    width: calc(100% / 3 - 2px);
-
-    /* to be removed */
-    height: 400px;
-}
-
-.business-plan .col-100{
-
-    /* to be removed*/
-    height: 200px;
+    width: calc(100% / 3 - 40px);
+    padding: 0 20px;
 }
 
 /* find partners */
@@ -150,23 +159,20 @@ h1{
     max-width: 100%;
 }
 
-.find-partner .col-30{
-    padding: 10px;
-}
-.find-partner .col-70 {
-    padding: 30px;
+.find-partner .col-txt{
+    width: calc(100% / 3 - 40px);
+    padding: 40px;
 }
 
-.find-partner .row{
-    align-items: center;
-    margin: 50px 0;
+.find-partner .col-img{
+    width: calc(100% / 3 * 2 - 40px);
 }
 
+.find-partner a{
+    border: 1px solid #000;
+}
 /* operations */
 
-.operations .row{
-    flex-wrap: wrap;
-}
 .operations .col{
     width: calc(100% / 3 - 40px);
     padding: 20px;
@@ -174,6 +180,10 @@ h1{
 
 /* our clients */
 
+.our-clients a{
+    text-decoration: underline;
+    color: #00f;
+}
 /* partners */
 
 .box .col{
@@ -182,7 +192,19 @@ h1{
 }
 
 .img-box{
+    display: flex;
     flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-box img{
+   width: 100%;
+   height: 50%;
+}
+
+.banner h2{
+    color: #61082B;
 }
 
 /* faq */
@@ -207,13 +229,23 @@ footer{
     background-color: #000;
     color: #fff;
 }
-.footer-top{
-    border-bottom: 1px solid #D0D0D3;
-}
 .footer-top .col{
     width: 20%;
 }
 
+footer ul{
+    line-height: 30px;
+}
+
 footer li > a{
     color: white;
+}
+
+.footer-top{
+    padding: 100px 0;
+}
+
+.footer-bottom{
+    color: #808080;
+    padding: 50px 0;
 }
